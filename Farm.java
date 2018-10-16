@@ -7,12 +7,9 @@ class Farm {
    }
    public void animalSounds(){
      for(int i = 0; i < aBunchOfAnimals.length; i++){
-       if (aBunchOfAnimals[i].getType() == "cow"){
-         System.out.println("the " + aBunchOfAnimals[i].getType() + " named " + aBunchOfAnimals[i].getName() + " goes " + aBunchOfAnimals[i].getSound());
-       }
-       else{
          System.out.println("the " + aBunchOfAnimals[i].getType() + " goes " + aBunchOfAnimals[i].getSound());
-       }
      }
+     NamedCow c = (NamedCow) aBunchOfAnimals[0];
+     System.out.println("the " + c.getType() + " named " + c.getName() + " goes " + c.getSound());
    }
 }
